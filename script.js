@@ -7,25 +7,25 @@ const resultContainer = document.getElementById("result")
 function selectRock(){
     // userChoice = rock;
    // computer choice ---> generate
-   const userChoice = "rock";
+     const userChoice = "rock";
 
-   userChoiceContainer.innerHTML = " Your Choice :  Rock"
+   userChoiceContainer.innerHTML = " Your Choice :  Rock" ;
 
-   const ComputerChoice = getComputerChoice();
+   const computerChoice = getComputerChoice();
 
-   computerChoiceContainer.innerHTML = "Computer Choice is :" +ComputerChoice
+   computerChoiceContainer.innerHTML = "Computer Choice is :" + computerChoice
 
    checkWinner(userChoice, computerChoice);
 }
 function selectPaper(){
     // userChoice = paper;
-    const userChoice = "paper";
+     const userChoice = "paper";
 
    userChoiceContainer.innerHTML = " Your Choice :  Paper"
 
-   const ComputerChoice = getComputerChoice();
+   const computerChoice = getComputerChoice();
 
-   computerChoiceContainer.innerHTML = "Computer Choice is :" +ComputerChoice
+   computerChoiceContainer.innerHTML = "Computer Choice is :" + computerChoice
 
    checkWinner(userChoice, computerChoice);
 }
