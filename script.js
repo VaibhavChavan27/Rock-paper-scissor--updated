@@ -43,8 +43,8 @@ function selectScissor(){
 }
 
 function getComputerChoice(){
-    let randomIndex = Math.floor(Math.random() * options.length)
-    return options[randomIndex]
+    let randomIndex = Math.floor(Math.random() * options.length);
+    return options[randomIndex];
 }
 
 function checkWinner(userChoice, computerChoice){
@@ -60,8 +60,8 @@ function checkWinner(userChoice, computerChoice){
         (computerChoice === "scissor" && userChoice === "paper")
     ){
        resultContainer.innerHTML = "Result : OOhhhoo.. You Lost";
-    }else{
-       resultContainer.innerHTML == "Result : Its a Draw";
+    }else {
+       resultContainer.innerHTML = "Result : Its a Draw";
     }
 
 }
