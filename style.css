@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+     color: aliceblue;
+    background-color: rgb(73, 73, 73);
+}
+.game-heading{
+    text-align: center;
+    background-color:rgb(31, 31, 31);
+    padding: 2vh 0;
+  
+}
+h1{
+   
+    text-align: center;
+    padding: 2vh 0;
+}
+
+.user-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    padding: 6vh 0;
+
+}
+.user-options button{
+    cursor: pointer;
+   
+}
+.user-options img{
+    height: 20vh;
+    width: 12vw;
+    border: 1px solid red;
+    border-radius: 10px;
+   
+}
+.user-options img:hover{
+    height: 24vh;
+    width: 18vw;
+    background-color: rgb(49, 49, 49);
+}
