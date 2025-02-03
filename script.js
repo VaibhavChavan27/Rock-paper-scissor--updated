@@ -49,14 +49,14 @@ function getComputerChoice(){
 
 function checkWinner(userChoice, computerChoice){
     if(
-        (userChoice === "rock" && computerChoice === "paper")
-        (userChoice === "paper" && computerChoice === "rock" )
+        (userChoice === "rock" && computerChoice === "paper") ||
+        (userChoice === "paper" && computerChoice === "rock" )||
         (userChoice === "scissor" && computerChoice === "paper")
     ){
         resultContainer.innerHTML = "Result : Yaay... You Won";
     }else if(
-        (computerChoice === "rock" && userChoice === "paper")
-        (computerChoice === "paper" && userChoice === "rock")
+        (computerChoice === "rock" && userChoice === "paper")||
+        (computerChoice === "paper" && userChoice === "rock")||
         (computerChoice === "scissor" && userChoice === "paper")
     ){
        resultContainer.innerHTML = "Result : OOhhhoo.. You Lost";
