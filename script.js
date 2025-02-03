@@ -13,7 +13,7 @@ function selectRock(){
 
    const computerChoice = getComputerChoice();
 
-   computerChoiceContainer.innerHTML = "Computer Choice is :" + computerChoice
+   computerChoiceContainer.innerHTML = "Computer Choice is :" + computerChoice;
 
    checkWinner(userChoice, computerChoice);
 }
@@ -25,7 +25,7 @@ function selectPaper(){
 
    const computerChoice = getComputerChoice();
 
-   computerChoiceContainer.innerHTML = "Computer Choice is :" + computerChoice
+   computerChoiceContainer.innerHTML = "Computer Choice is :" + computerChoice;
 
    checkWinner(userChoice, computerChoice);
 }
@@ -37,7 +37,7 @@ function selectScissor(){
 
    const computerChoice = getComputerChoice();
 
-   computerChoiceContainer.innerHTML = "Computer Choice is :" + computerChoice
+   computerChoiceContainer.innerHTML = "Computer Choice is :" + computerChoice;
 
    checkWinner(userChoice, computerChoice);
 }
@@ -49,13 +49,13 @@ function getComputerChoice(){
 
 function checkWinner(userChoice, computerChoice){
     if(
-        (userChoice === "rock" && computerChoice === "paper") ||
+        (userChoice === "rock" && computerChoice === "scissor") ||
         (userChoice === "paper" && computerChoice === "rock" )||
         (userChoice === "scissor" && computerChoice === "paper")
     ){
         resultContainer.innerHTML = "Result : Yaay... You Won";
     }else if(
-        (computerChoice === "rock" && userChoice === "paper")||
+        (computerChoice === "rock" && userChoice === "scissor")||
         (computerChoice === "paper" && userChoice === "rock")||
         (computerChoice === "scissor" && userChoice === "paper")
     ){
