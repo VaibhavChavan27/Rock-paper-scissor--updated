@@ -35,9 +35,9 @@ function selectScissor(){
 
    userChoiceContainer.innerHTML = " Your Choice :  Scissor"
 
-   const ComputerChoice = getComputerChoice();
+   const computerChoice = getComputerChoice();
 
-   computerChoiceContainer.innerHTML = "Computer Choice is :" +ComputerChoice
+   computerChoiceContainer.innerHTML = "Computer Choice is :" + computerChoice
 
    checkWinner(userChoice, computerChoice);
 }
