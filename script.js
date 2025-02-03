@@ -15,7 +15,7 @@ function selectRock(){
 
    computerChoiceContainer.innerHTML = "Computer Choice is :" +ComputerChoice
 
-   checkWinner(userChoice, ComputerChoice);
+   checkWinner(userChoice, computerChoice);
 }
 function selectPaper(){
     // userChoice = paper;
@@ -27,7 +27,7 @@ function selectPaper(){
 
    computerChoiceContainer.innerHTML = "Computer Choice is :" +ComputerChoice
 
-   checkWinner(userChoice, ComputerChoice);
+   checkWinner(userChoice, computerChoice);
 }
 function selectScissor(){
     // userChoice = scissor;
@@ -39,7 +39,7 @@ function selectScissor(){
 
    computerChoiceContainer.innerHTML = "Computer Choice is :" +ComputerChoice
 
-   checkWinner(userChoice, ComputerChoice);
+   checkWinner(userChoice, computerChoice);
 }
 
 function getComputerChoice(){
@@ -47,21 +47,21 @@ function getComputerChoice(){
     return options[randomIndex]
 }
 
-function checkWinner(userChoice, ComputerChoice){
+function checkWinner(userChoice, computerChoice){
     if(
-        (userChoice === "rock" && ComputerChoice === "paper")
-        (userChoice === "paper" && ComputerChoice === "rock" )
-        (userChoice === "scissor" && ComputerChoice === "paper")
+        (userChoice === "rock" && computerChoice === "paper")
+        (userChoice === "paper" && computerChoice === "rock" )
+        (userChoice === "scissor" && computerChoice === "paper")
     ){
         resultContainer.innerHTML = "Result : Yaay... You Won";
     }else if(
-        (ComputerChoice === "rock" && userChoice === "paper")
-        (ComputerChoice === "paper" && userChoice === "rock")
-        (ComputerChoice === "scissor" && userChoice === "paper")
+        (computerChoice === "rock" && userChoice === "paper")
+        (computerChoice === "paper" && userChoice === "rock")
+        (computerChoice === "scissor" && userChoice === "paper")
     ){
-        resultContainer.innerHTML = "Result : OOhhhoo.. You Lost";
+       resultContainer.innerHTML = "Result : OOhhhoo.. You Lost";
     }else{
-        resultContainer.innerHTML == "Result : Its a Draw";
+       resultContainer.innerHTML == "Result : Its a Draw";
     }
 
 }
